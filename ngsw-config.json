@@ -9,6 +9,7 @@
         "files": [
           "/favicon.ico",
           "/index.html",
+          "/manifest.webmanifest",
           "/*.css",
           "/*.js"
         ]
@@ -22,6 +23,20 @@
           "/assets/**",
           "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "userList",
+      "urls": [
+        "https://jsonplaceholder.typicode.com/users"
+      ],
+      "cacheConfig": {       
+        "maxSize": 5,
+        "maxAge": "1h",
+        "timeout": "5s",
+        "strategy": "freshness"
       }
     }
   ]
